@@ -1,0 +1,919 @@
+➜  ~ cd
+➜  ~ cd downloads 
+cd: no such file or directory: downloads
+➜  ~ cd desktop 
+cd: no such file or directory: desktop
+➜  ~ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+➜  ~ mkdir upu              
+➜  ~ ls 
+anaconda2                   numpy
+application                 Pictures
+bnjkfbjhfkbwe               PlayOnLinux's virtual drives
+build                       projects
+Desktop                     Projects
+Documents                   Public
+Downloads                   scipy
+firefox-51.0.tar.bz2        Templates
+KONAMI                      tenserflow
+lib                         Ubuntu LTS 16.04
+lightfm_data                upu
+movies                      Videos
+Music                       virtualEnvironments
+mysql-connector-java-5.0.8   
+NetBeansProjects
+➜  ~ cd upu
+➜  upu cd ..
+➜  ~ cd upu
+➜  upu $git config --global user.name "upasana"
+zsh: command not found: config
+➜  upu $git config --global user.name "upasana" 
+zsh: command not found: config
+➜  upu git config --global user.email "upasana"            
+➜  upu git config --global user.email "upasana.basnet94@gmail.com"
+➜  upu git config --global user.name "upasana"             
+➜  upu git config-list
+git: 'config-list' is not a git command. See 'git --help'.
+➜  upu git config --list
+user.email=upasana.basnet94@gmail.com
+user.name=upasana
+➜  upu git init
+Initialized empty Git repository in /home/raee/upu/.git/
+➜  upu git:(master) ✗ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	gt.txt
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git add u.txt
+fatal: pathspec 'u.txt' did not match any files
+➜  upu git:(master) ✗ git status   
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	gt.txt
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git add gt
+fatal: pathspec 'gt' did not match any files
+➜  upu git:(master) ✗ git add gt.txt
+➜  upu git:(master) ✗ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+➜  upu git:(master) ✗ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+➜  upu git:(master) ✗ git commit -m "This is my 1st class"
+[master (root-commit) dcbf66c] This is my 1st class
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gt.txt
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status    
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add gt.txt
+➜  upu git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+➜  upu git:(master) ✗ git commit -m "Git class"
+[master 4e34d57] Git class
+ 1 file changed, 1 insertion(+)
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git diff
+
+[1]  + 745 suspended  git diff
+➜  upu git:(master) ✗ git add gt.txt
+➜  upu git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	index.html
+
+➜  upu git:(master) ✗ git add . 
+➜  upu git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gt.txt
+	new file:   index.html
+
+➜  upu git:(master) ✗ git commit -m "Git" 
+[master e73eb6a] Git
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add .
+➜  upu git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gt.txt
+
+➜  upu git:(master) ✗ git diff
+
+[2]  + 8240 suspended  git diff
+➜  upu git:(master) ✗ git commit -m "abc"
+[master 42ee0db] abc
+ 1 file changed, 5 insertions(+)
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[3]  + 12340 suspended  git log
+➜  upu git:(master) git log
+
+[4]  + 13836 suspended  git log
+➜  upu git:(master) git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+➜  upu git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add .
+➜  upu git:(master) ✗ git commit -m "Checking"
+[master d708301] Checking
+ 1 file changed, 1 insertion(+)
+➜  upu git:(master) git log
+
+[5]  + 17460 suspended  git log
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+➜  upu git:(master) git checkout <html>
+<title>Git Training</title>>
+</html>
+zsh: parse error near `\n'
+➜  upu git:(master) git log
+
+[7]  + 26573 suspended  git log
+➜  upu git:(master) git checkout e73eb6
+Note: checking out 'e73eb6'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at e73eb6a... Git
+➜  upu git:(e73eb6a) git status
+HEAD detached at e73eb6a
+nothing to commit, working directory clean
+➜  upu git:(e73eb6a) git log
+➜  upu git:(e73eb6a) git checkout dcbf66c8e5
+Previous HEAD position was e73eb6a... Git
+HEAD is now at dcbf66c... This is my 1st class
+➜  upu git:(dcbf66c) git status
+HEAD detached at dcbf66c
+nothing to commit, working directory clean
+➜  upu git:(dcbf66c) git log
+
+[9]  + 31717 suspended  git log
+➜  upu git:(dcbf66c) git status
+HEAD detached at dcbf66c
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(dcbf66c) ✗ git add gt.txt
+➜  upu git:(dcbf66c) ✗ git status
+HEAD detached at dcbf66c
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   gt.txt
+
+➜  upu git:(dcbf66c) ✗ git commit -m "2nd commit"
+[detached HEAD 6bce304] 2nd commit
+ 1 file changed, 1 insertion(+)
+➜  upu git:(6bce304) git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+➜  upu git:(6bce304) ✗ git status
+HEAD detached from dcbf66c
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(6bce304) ✗ git add .
+➜  upu git:(6bce304) ✗ git commit -m "2n commit"
+[detached HEAD e9d9342] 2n commit
+ 1 file changed, 1 insertion(+)
+➜  upu git:(e9d9342) git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+➜  upu git:(e9d9342) git status
+HEAD detached from dcbf66c
+nothing to commit, working directory clean
+➜  upu git:(e9d9342) git add .
+➜  upu git:(e9d9342) ✗ git commit -m "3rd commit"
+[detached HEAD e290006] 3rd commit
+ 1 file changed, 1 insertion(+)
+➜  upu git:(e290006) git status
+HEAD detached from dcbf66c
+nothing to commit, working directory clean
+➜  upu git:(e290006) git log
+
+[10]  + 4242 suspended  git log
+➜  upu git:(e290006) git checkout 6bce30
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  e290006 3rd commit
+  e9d9342 2n commit
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> e290006
+
+HEAD is now at 6bce304... 2nd commit
+➜  upu git:(6bce304) git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  6bce304 2nd commit
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 6bce304
+
+Switched to branch 'master'
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[11]  + 6308 suspended  git log
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[12]  + 31984 suspended  git log
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git add .
+➜  upu git:(master) ✗ git commit -m "add test file"
+[master 008141c] add test file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git diff
+
+[13]  + 684 suspended  git diff
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[14]  + 978 suspended  git log
+➜  upu git:(master) git checkout  d708
+Note: checking out 'd708'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at d708301... Checking
+➜  upu git:(d708301) git status
+HEAD detached at d708301
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(d708301) ✗ git add .
+➜  upu git:(d708301) ✗ git commit -m "for testing"
+[detached HEAD 7607531] for testing
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test
+➜  upu git:(7607531) git status
+HEAD detached from d708301
+nothing to commit, working directory clean
+➜  upu git:(7607531) git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  7607531 for testing
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 7607531
+
+Switched to branch 'master'
+➜  upu git:(master) git branch
+* master
+➜  upu git:(master) git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    test
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add .
+➜  upu git:(master) ✗ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    test
+
+➜  upu git:(master) ✗ git commit -m "delete test ,file"
+[master 347e5cd] delete test ,file
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 test
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[15]  + 3036 suspended  git log
+➜  upu git:(master) git checkout 008141cc
+Note: checking out '008141cc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 008141c... add test file
+➜  upu git:(008141c) git checkkout master
+git: 'checkkout' is not a git command. See 'git --help'.
+
+Did you mean this?
+	checkout
+➜  upu git:(008141c) git checkout master 
+Previous HEAD position was 008141c... add test file
+Switched to branch 'master'
+➜  upu git:(master) ✗ git branch
+* master
+➜  upu git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   gt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add gt.txt
+➜  upu git:(master) ✗ git commit -m "a"
+[master 0c818bb] a
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	main.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ ls
+gt.txt  index.html  main.css  new.css
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ ls
+gt.txt  index.html  main.css  new.css
+➜  upu git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+➜  upu git:(master) ✗ git add index.html
+➜  upu git:(master) ✗ git commit -m "b"
+[master d634e92] b
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+➜  upu git:(master) ✗ get status
+zsh: command not found: get
+➜  upu git:(master) ✗ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(master) ✗ git add .gitignore
+➜  upu git:(master) ✗ git commit -m "ignore"
+[master a405fde] ignore
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log
+
+[16]  + 5811 suspended  git log
+➜  upu git:(master) git log --oneline
+
+[17]  + 6058 suspended  git log --oneline
+➜  upu git:(master) git checkout d708301
+Note: checking out 'd708301'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at d708301... Checking
+➜  upu git:(d708301) ✗ git log
+
+[18]  + 6792 suspended  git log
+➜  upu git:(d708301) ✗ gst
+HEAD detached at d708301
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	main.css
+	new.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(d708301) ✗ get status
+zsh: command not found: get
+➜  upu git:(d708301) ✗ git status
+HEAD detached at d708301
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	main.css
+	new.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(d708301) ✗ git checkout master
+Previous HEAD position was d708301... Checking
+Switched to branch 'master'
+➜  upu git:(master) git status
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git log --oneline
+
+[19]  + 19525 suspended  git log --oneline
+➜  upu git:(master) git .gitignore 
+git: '.gitignore' is not a git command. See 'git --help'.
+➜  upu git:(master) git status         
+On branch master
+nothing to commit, working directory clean
+➜  upu git:(master) git branch -v
+* master a405fde ignore
+➜  upu git:(master) git revert HEAD
+Use "fg" to return to nano.
+[20]  + 25637 suspended (signal)  git revert HEAD
+➜  upu git:(master) ✗ git branch -v
+* master a405fde ignore
+➜  upu git:(master) ✗ git log --oneline
+➜  upu git:(master) ✗ git checkout d708301
+Note: checking out 'd708301'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at d708301... Checking
+➜  upu git:(d708301) ✗ git status
+HEAD detached at d708301
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	main.css
+	new.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(d708301) ✗ git add main.css
+➜  upu git:(d708301) ✗ git commit -m "commiting"
+[detached HEAD af80a76] commiting
+ 1 file changed, 1 insertion(+)
+ create mode 100644 main.css
+➜  upu git:(af80a76) ✗ git revert HEAD
+Use "fg" to return to nano.
+[22]  + 30412 suspended (signal)  git revert HEAD
+➜  upu git:(af80a76) ✗ git branch -v
+* (HEAD detached from d708301) af80a76 commiting
+  master a405fde ignore
+➜  upu git:(af80a76) ✗ git checkout master
+error: The following untracked working tree files would be overwritten by checkout:
+	.gitignore
+Please move or remove them before you can switch branches.
+Aborting
+➜  upu git:(af80a76) ✗ git status
+HEAD detached from d708301
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+➜  upu git:(af80a76) ✗ git checkout master
+error: The following untracked working tree files would be overwritten by checkout:
+	.gitignore
+Please move or remove them before you can switch branches.
+Aborting
+➜  upu git:(af80a76) ✗ git status
+HEAD detached from d708301
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    main.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+
+➜  upu git:(af80a76) ✗ git add .gitignore
+➜  upu git:(af80a76) ✗ git commit -m "comit"
+[detached HEAD acc328d] comit
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ delete mode 100644 main.css
+➜  upu git:(acc328d) git checkout master
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  acc328d comit
+  af80a76 commiting
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> acc328d
+
+Switched to branch 'master'
+➜  upu git:(master) git branch
+* master
+➜  upu git:(master) git log
+
+[23]  + 5109 suspended  git log
+➜  upu git:(master) git branch
+* master
+➜  upu git:(master) git log
+
+[24]  + 14039 suspended  git log
+➜  upu git:(master) git log --oneline
+
+[25]  + 14266 suspended  git log --oneline
+➜  upu git:(master) git checkout 347e5cd
+Note: checking out '347e5cd'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 347e5cd... delete test ,file
+➜  upu git:(347e5cd) ✗ git branch day1
+➜  upu git:(347e5cd) ✗ git branch
+* (HEAD detached at 347e5cd)
+  day1
+  master
+➜  upu git:(347e5cd) ✗ git checkout day1
+Switched to branch 'day1'
+➜  upu git:(day1) ✗ git checkout master 
+Switched to branch 'master'
+➜  upu git:(master) git branch
+  day1
+* master
+➜  upu git:(master) git checkout day1  
+Switched to branch 'day1'
+➜  upu git:(day1) ✗ git checkout HEAD~1
+Note: checking out 'HEAD~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 008141c... add test file
+➜  upu git:(008141c) ✗ git status
+HEAD detached at 008141c
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	new.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(008141c) ✗ gst       
+HEAD detached at 008141c
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	new.css
+	neww.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(008141c) ✗ gc -am "add n commit"
+HEAD detached at 008141c
+Untracked files:
+	new.css
+	neww.txt
+
+nothing added to commit but untracked files present
+➜  upu git:(008141c) ✗ gc -am "add n commit"
+HEAD detached at 008141c
+Untracked files:
+	new.css
+	neww.txt
+
+nothing added to commit but untracked files present
+➜  upu git:(008141c) ✗ git add new.css 
+➜  upu git:(008141c) ✗ git status
+HEAD detached at 008141c
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   new.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	neww.txt
+
+➜  upu git:(008141c) ✗ git commit -m "new.css add"
+[detached HEAD 4358818] new.css add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.css
+➜  upu git:(4358818) ✗ git status
+HEAD detached from 008141c
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	neww.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(4358818) ✗ git gc -am "add"
+error: unknown switch `a'
+usage: git gc [<options>]
+
+    -q, --quiet           suppress progress reporting
+    --prune[=<date>]      prune unreferenced objects
+    --aggressive          be more thorough (increased runtime)
+    --auto                enable auto-gc mode
+    --force               force running gc even if there may be another gc running
+
+➜  upu git:(4358818) ✗ git status      
+HEAD detached from 008141c
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	neww.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+➜  upu git:(4358818) ✗ gc -am "add" 
+HEAD detached from 008141c
+Untracked files:
+	neww.txt
+
+nothing added to commit but untracked files present
+➜  upu git:(4358818) ✗ git gc -am "add"
+error: unknown switch `a'
+usage: git gc [<options>]
+
+    -q, --quiet           suppress progress reporting
+    --prune[=<date>]      prune unreferenced objects
+    --aggressive          be more thorough (increased runtime)
+    --auto                enable auto-gc mode
+    --force               force running gc even if there may be another gc running
+
+➜  upu git:(4358818) ✗                 
+

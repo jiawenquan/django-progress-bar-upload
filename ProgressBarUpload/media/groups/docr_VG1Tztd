@@ -1,0 +1,37 @@
+--Deep learning
+-recurrent neural network(rnn)-RNNs can use their internal memory to process arbitrary sequences of inputs.
+-tenserflow
+-sequence to sequence learning
+-convutional neural network
+-lstm
+	Numerous researchers now use a deep learning RNN called the long short-term memory (LSTM) network
+	LSTM RNNs prevent backpropagated errors from vanishing or exploding
+-python(framework-tenserflow)
+-teserract
+-git,gitlab
+-idle(pycharm)
+-ibm watson(questioning and ansering computer system using advanced nlp,machine learning ,ai)
+-tesseract
+-gpu
+-Theano is a Python library that allows you to define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently. Theano features:
+	
+    tight integration with NumPy – Use numpy.ndarray in Theano-compiled functions.
+    transparent use of a GPU – Perform data-intensive calculations up to 140x faster than with CPU.(float32 only)
+    efficient symbolic differentiation – Theano does your derivatives for function with one or many inputs.
+    speed and stability optimizations – Get the right answer for log(1+x) even when x is really tiny.
+    dynamic C code generation – Evaluate expressions faster.
+    extensive unit-testing and self-verification – Detect and diagnose many types of errors.
+
+
+-supervised learning::collecting training data->train classifier(like a function)->make predictions
+	classifier(box of rules)
+	scikit-learn uses real-valued features not string
+	pip install numpy,scipy,sklearn
+
+
+-semantic ambiguity(same name problems like cat and kitty)
+
+-better way to write tenserflow program is tflearn
+	tflearn
+		high levek ml library
+		syntax similar to scikit learn
